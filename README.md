@@ -14,7 +14,7 @@ files based on the previous predicted classification output by the Discriminator
 simultaneously become increasingly good at detecting these files and classifying them as malicious.
 
 ### Brief
-(GAN+ACN)[https://raw.githubusercontent.com/Themoonflow/Cybersecurity_GAN/main/IMG/GAN_ACN.png]
+![GAN+ACN](https://raw.githubusercontent.com/Themoonflow/Cybersecurity_GAN/main/IMG/GAN_ACN.png "Text to show on mouseover").
 
 ### The Generator
 The Generator model is responsible for creating malicious files to evade detection from antivirus software
