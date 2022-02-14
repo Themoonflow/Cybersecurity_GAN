@@ -1,7 +1,7 @@
-# QMIND 2019-2020 Cyber_Security Team
+### Cybersecurity, Cyber Defence
 
-### Our Goal
-The goal of the Cyber Security team is to develop a Generative Adversarial Network (GAN) responsible for the creation
+### Goal
+To develop a Generative Adversarial Network (GAN) responsible for the creation
 of malicious files that are capable of evading detection from antivirus software as well as a model that is capable 
 of predicting if a file is malicious or benign.
 
@@ -38,25 +38,12 @@ The Discriminator model will output a single value as its prediction to whether 
 
 ### Data
 ##### Initial steps
-The team began working with the *Endgame Malware Benchmark for Research (Ember)* (https://github.com/endgameinc/ember)
+*Endgame Malware Benchmark for Research (Ember)* (https://github.com/endgameinc/ember)
 dataset, which consists of 1.1 million vectorized features taken from portable executable (PE) files.
 ##### Following steps
-As the team developed models to train on the Ember dataset (not containing any PEs), the ability to revert the 
+Create models to train on the Ember dataset (not containing any PEs), the ability to revert the 
 output adversarial examples to PE files was desired. The team then decided to pivot towards extracting vectorized
 features from PE files ourselves, passing them through the GAN and with the use of the Lief python package will 
 recreate the initial file based on the altered vectorized features. For the use of PE files, the team needed to pivot
 to a new dataset in which VirusShare proved to be the most applicable to our uses.
-
-
-## Team Members:
-Will Macdonald
-
-Ryan Saweczko
-
-Will Coffell
-
-Connor Chappell
-
-Cameron Morrison
-
 
