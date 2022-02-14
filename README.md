@@ -13,6 +13,8 @@ As training progresses, the Generator will become increasingly good at creating 
 files based on the previous predicted classification output by the Discriminator; While the Discriminator will 
 simultaneously become increasingly good at detecting these files and classifying them as malicious.
 
+### Brief
+https://raw.githubusercontent.com/Themoonflow/Cybersecurity_GAN/main/IMG/GAN_ACN.png
 
 ### The Generator
 The Generator model is responsible for creating malicious files to evade detection from antivirus software
