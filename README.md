@@ -1,17 +1,17 @@
 ### Cybersecurity, Cyber Defence
 
 ### Goal
-To develop a Generative Adversarial Network (GAN) responsible for the creation
-of malicious files that are capable of evading detection from antivirus software as well as a model that is capable 
-of predicting if a file is malicious or benign.
+To develop a Generative Adversarial Network (GAN) responsible for:
+  1. The creation of malicious files that are capable of evading detection from antivirus software. - Generator - Red Team
+  2. A model that is capable of predicting if a file is malicious or benign by classification - Discriminator- Blue Team
 
 The GAN is comprised of two main models that train against one another in attempts to beat one another. These two 
 models are: the Generator - responsible for the creation of these malicious files to evade detection; and the 
 Discriminator - responsible for classifying files as either malicious or benign.
 
 As training progresses, the Generator will become increasingly good at creating malicious files that resemble benign 
-files based on the previous predicted classification output by the Discriminator; While the Discriminator will 
-simultaneously become increasingly good at detecting these files and classifying them as malicious.
+files based on the previous predicted classification output by the Discriminator; 
+While the Discriminator will simultaneously become increasingly good at detecting these files and classifying them as malicious.
 
 ### Brief
 ![GAN+ACN](https://raw.githubusercontent.com/Themoonflow/Cybersecurity_GAN/main/IMG/GAN_ACN.png "Text to show on mouseover").
@@ -19,8 +19,9 @@ simultaneously become increasingly good at detecting these files and classifying
 ### The Generator
 The Generator model is responsible for creating malicious files to evade detection from antivirus software
 ##### Inputs
-The Generator takes two tensors - first being a tensor containing vectorized features of malicious files in the shape
-(None, 2381); the second input is a tensor of randomly generated noise within range 0 to 1 (*tf.random.uniform()*) of 
+The Generator takes two tensors:
+1) The first being a tensor containing vectorized features of malicious files in the shape (None, 2381); 
+2) The second input is a tensor of randomly generated noise within range 0 to 1 (*tf.random.uniform()*) of 
 the same shape (None, 2381).
 ##### Output
 The Generator model will output a singular *adversarial example* (tensor in the same shape as the inputs), of the
