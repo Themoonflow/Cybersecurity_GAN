@@ -23,6 +23,7 @@ def init_generator():
     leaky2 = tf.keras.layers.LeakyReLU(alpha=0.2)(batch_norm2)
 
     dense_layer3 = tf.keras.layers.Dense(2381, activation='tanh')(leaky2)
+    #dense_layer3 = tf.keras.layers.Dense(2381, activation='sigmoid')(leaky2)
 
     output = tf.keras.layers.maximum([dense_layer3, malware])
     gen = tf.keras.Model(inputs=[malware, noise], outputs=output, name="Generator")
