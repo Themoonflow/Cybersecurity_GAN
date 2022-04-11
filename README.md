@@ -1,5 +1,5 @@
 ### Cybersecurity, Cyber Defence
-
+### Generative Adversarial Network
 ### Goal
 To develop a Generative Adversarial Network (GAN) responsible for:
   1. The creation of malicious files that are capable of evading detection from antivirus software. - Generator - Red Team
